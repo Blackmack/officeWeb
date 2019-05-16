@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '微软雅黑','regular'
+}
+/**header  start**/
+.nav-header{
+    max-width: 1200px;
+    height: 120px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.nav-header .logo{
+    display: flex;
+    float: left;
+    height: 100%;
+    align-items: center;
+}
+.nav-header .logo img{
+    width: 45px;
+    height: auto;
+    vertical-align: middle;
+}
+.nav-header .logo .companyTitle{
+    font-size: 32px;
+    font-weight: 500;
+    color: #333;
+    vertical-align: middle;
+}
+.nav-header .nav-menu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.nav-header li{
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    color: #666;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30px;
+}
+.nav-header li.active,.nav-header li:hover{
+    background-color: #fd8200;
+    color: #fff;
+    cursor: pointer;
+}
+/**hearder end**/
+
+/**banner**/
+.banner{
+    height:auto;
+}
+.banner img{
+    width: 100%;
+}
+/**服务**/
+.content .area-title{
+    margin-top:100px;
+    text-align: center;
+    font-size: 24px;
+}
+.content .sub-title{
+    position: relative;
+    width: 128px;
+    height: 1px;
+    margin: 20px auto;
+    background-color: #b0afaf;
+    margin-bottom:40px; 
+}
+.content .sub-title .sub-title-txt{
+    display: block;
+    padding: 0 4px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top:-10px;
+    margin-left: -32px;
+    font-size: 14px;
+    color: #b0afaf;
+    text-align: center;
+}
+.service-list{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.service-list .list-item{
+    width: 240px;
+}
+.service-list .list-item .item-wrap{
+    display: flex;
+    align-items: center;
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    margin:0 auto;
+    margin-bottom:24px; 
+}
+.service-list .list-item p{
+    text-align: center;
+}
+.service-list .item-icon{
+    width: 64px;
+    height: 65px;
+    margin: 0 auto;
+    background-size: contain;
+    overflow: hidden;
+    background: url('../images/service_icons.png') no-repeat;
+    
+    font-size: 14px;
+    color: #333;
+}
+.service-list .item-icon.icon_1{
+    background-position-x: 0;
+}
+.service-list .item-icon.icon_2{
+    background-position-x: -64px;
+}
+.service-list .item-icon.icon_3{
+    background-position-x: -130px;
+}
+.service-list .item-icon.icon_4{
+    background-position-x: -200px;
+}
+.service-list .item-icon.icon_5{
+    background-position-x: -270px;
+}
+/**关于**/
+.about img{
+    width: 100%;
+}
+.about-wrap{
+    display: flex;
+     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.about-wrap .logo-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink:0;
+    width: 150px;
+    height: 150px;
+    background-color: #fafafa;
+    border-radius: 50%;
+}
+.about-wrap .logo-circle img{
+    width: 88px;
+    height: 96px;
+}
+.about-wrap article{
+    margin-left: 64px;
+    line-height: 30px;
+}
+
+/**footer**/
+footer{
+    height:72px;
+    line-height: 72px;
+    background: #fff;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    border-top:1px solid #eee;
+}
+/**product**/
+.product-list{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.product-list img{
+    width: 372px;
+    height: auto;
+}
+/**联系**/
+.contact-wrap{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+.contact-info .contat-title{
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+.contact-info .form-item input,textarea{
+    border: 1px solid #eee;
+    height: 40px;
+    width: 300px;
+    padding: 0 8px;
+    outline: none;
+}
+.contact-info .form-item input.item-name{
+    margin-right: 8px;
+}
+.contact-info  .form-item {
+    margin:10px 0;
+}
+.form-item input.email-item{
+    width: 608px;
+}
+.form-item textarea{
+    resize: none;
+    width: 608px;
+    height: 120px;
+}
+.form-item .btn-send{
+    display: inline-block;
+    height:48px;
+    width: 140px;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+    background-color: #fd8200;
+    cursor: pointer;
+}
+.item-tip{
+    font-size: 14px;
+}
