@@ -232,3 +232,44 @@ footer{
 .item-tip{
     font-size: 14px;
 }
+/**统一提示样式**/
+.dialog{
+    display: none;
+    position: fixed;
+    height:120px;
+    width: 100%;
+    top:30%;
+    line-height: 120px;
+    background: rgba(60, 60, 60, 0.8);
+    text-align: center;
+    font-size:26px;
+    color: #fff;
+}
+.dialog.showTip{
+    display: block;
+    animation: 1s showDialog;
+    animation-fill-mode:forwards;
+}
+.dialog.hideTip{
+    display: block;
+    animation: 1s hideDialog;
+    animation-fill-mode:forwards;
+}
+@keyframes showDialog  {
+    0%{
+        top: 100%;
+        opacity: 0.1;
+    }
+    100%{
+        top: 30%;
+    }
+}
+@keyframes hideDialog{
+    0%{
+        left:0;
+        opacity: 0.1;
+    }
+    100%{
+        left: 100%;
+    }
+} 

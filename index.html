@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div class="dialog" id="dialog"><div>请填写联系电话</div></div>
     <header class="nav-header">
         <div class="logo">
             <img src="images/logo.png" alt="">
@@ -98,16 +99,16 @@
                 <div class="contact-info">
                     <p class="contat-title">告诉我们您的需求</p>
                     <div class=" form-item">
-                        <input class="item-name" type="text" placeholder="您的姓名"><input type="text" placeholder="联系电话">
+                        <input class="item-name" id="fName" type="text" placeholder="您的姓名"><input type="text" id="fTelephone" placeholder="联系电话">
                     </div>
                     <div class="form-item">
-                        <input type="text" class="email-item" placeholder="电子邮箱">
+                        <input type="text" id="fEmail" class="email-item" placeholder="电子邮箱">
                     </div>
                     <div class=" form-item">
-                        <textarea  placeholder="描述您的需求，如APP开发、微信开发、网站建设"></textarea>
+                        <textarea id="fDesc" placeholder="描述您的需求，如APP开发、微信开发、网站建设"></textarea>
                     </div>
                     <div class=" form-item">
-                         <span class="btn-send">发送</span><span class="item-tip"> 我们将在1个工作日内回复，资料会保密处理。</span>
+                         <span class="btn-send" id="btn-send">发送</span><span class="item-tip"> 我们将在1个工作日内回复，资料会保密处理。</span>
                        </div> 
                 </div>
             </div>
@@ -117,5 +118,5 @@
         2018 版权所有 © 博逊共创科技 粤ICP备18051756号
     </footer>
 </body>
-
+<script src="./js/index.js"></script>
 </html>
